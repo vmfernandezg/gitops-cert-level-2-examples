@@ -1,4 +1,15 @@
 ---
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: simple-deployment
+# spec:
+#   template:
+#     spec:
+#       containers:
+#       - name: webserver-simple
+#         image: docker.io/kostiscodefresh/simple-env-app:1.0
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -8,4 +19,4 @@ spec:
     spec:
       containers:
       - name: webserver-simple
-        image: docker.io/kostiscodefresh/simple-env-app:1.0
+        image: docker.io/kostiscodefresh/simple-env-app:2.0
